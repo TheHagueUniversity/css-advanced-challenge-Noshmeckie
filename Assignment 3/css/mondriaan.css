@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: black;
+}
+/* Grid
+------------------------------------*/
+ .grid{
+	display:grid;
+	grid-template-columns:70% 30%;
+	grid-auto-flow:row dense;
+}
+.box{
+	background:white;
+	border:8px solid black;
+	height:300px;
+}
+/* Dimensions
+------------------------------------*/
+.normal{
+  grid-row:span 1;
+	height:auto;
+}
+.large{
+	grid-row:span 2;
+	height: auto;
+}
+.obese{
+	grid-row:span 3;
+	height:auto;
+}
+.xxl{
+	grid-column:span 4;
+}
+.xxxl{
+	grid-column:span 5;
+}
+/* Colours
+------------------------------------*/
+.black{
+	background:black;
+}
+.white{
+	background:white;
+}
+.red{
+	background:red;
+}
+.blue{
+	background:blue;
+}
+.yellow{
+	background:yellow
+}
+/* Breakpoints
+------------------------------------*/
+@media screen and (min-width: 800px){
+		.grid{
+		grid-template-columns: 33.3% 33.3% 33.3%;
+	}
+	.box{
+		height: 220px;
+	}
+	.normal{
+		grid-row: span 2;
+		height: auto;
+	}
+	.large{
+		grid-row: span 3;
+		height: auto;
+	}
+	.obsese{
+		grid-row: span 4;
+		height: auto;
+	}
+	.xxl{
+		grid-column: span 2;
+	}
+	.xxxl{
+		grid-column: span 3;
+	}
+}
+
+@media screen and (min-width: 1400px){
+		.grid{
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+	.box{
+		height: 320px;
+	}
+	.normal{
+		grid-row: span 2;
+		height: auto;
+	}
+	.large{
+		grid-row: span 3;
+		height: auto;
+	}
+	.obsese{
+		grid-row: span 4;
+		height: auto;
+	}
+	.xxl{
+		grid-column: span 2;
+	}
+	.xxxl{
+		grid-column: span 3;
+	}
+}
