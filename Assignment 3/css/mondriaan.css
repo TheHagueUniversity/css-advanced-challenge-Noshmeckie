@@ -38,25 +38,25 @@
 /* Colours
 ------------------------------------*/
 .black{
-	background:black;
+	background: #000000;
 }
 .white{
-	background:white;
+	background: #F8F9F9;
 }
 .red{
-	background:red;
+	background: #E74C3C;
 }
 .blue{
-	background:blue;
+	background: #3498DB;
 }
 .yellow{
-	background:yellow
+	background: #FFD500;
 }
 /* Breakpoints
 ------------------------------------*/
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
 		.grid{
-		grid-template-columns: 30% 30% 30% 10%;
+		grid-template-columns: 25% 25% 25% 25%;
 	}
 	.box{
 		height: 220px;
@@ -70,39 +70,13 @@
 		height: auto;
 	}
 	.obsese{
-		grid-row: span 4;
+		grid-row: span 1;
 		height: auto;
 	}
 	.xxl{
-		grid-column: span 2;
+		grid-column: span 4;
 	}
 	.xxxl{
-		grid-column: span 3;
-	}
-}
-@media screen and (min-width: 1600px){
-		.grid{
-		grid-template-columns: 30% 30% 20% 20%;
-	}
-	.box{
-		height: 320px;
-	}
-	.normal{
-		grid-row: span 2;
-		height: auto;
-	}
-	.large{
-		grid-row: span 3;
-		height: auto;
-	}
-	.obsese{
-		grid-row: span 4;
-		height: auto;
-	}
-	.xxl{
 		grid-column: span 2;
-	}
-	.xxxl{
-		grid-column: span 3;
 	}
 }
