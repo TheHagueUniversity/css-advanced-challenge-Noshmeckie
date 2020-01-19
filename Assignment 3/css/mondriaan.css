@@ -56,27 +56,27 @@
 ------------------------------------*/
 @media screen and (min-width: 1000px){
 		.grid{
-		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-columns: 20% 20% 20% 20% 20%;
 	}
 	.box{
 		height: 220px;
 	}
 	.normal{
-		grid-row: span 2;
+		grid-row: span 1;
 		height: auto;
 	}
 	.large{
-		grid-row: span 3;
+		grid-row: span 2;
 		height: auto;
 	}
 	.obsese{
-		grid-row: span 1;
+		grid-row: span 3;
 		height: auto;
 	}
 	.xxl{
 		grid-column: span 4;
 	}
 	.xxxl{
-		grid-column: span 2;
+		grid-column: span 5;
 	}
 }
